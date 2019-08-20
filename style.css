@@ -1,11 +1,21 @@
 *{
     box-sizing: border-box;
+    font-family: 'Quattrocento', serif;
+    color: white;
 }
 
 nav{
-    background-color: rgb(59, 59, 59);
+    background-color: rgb(59, 59, 59, .8);
     display: flex;
     justify-content: space-between;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    padding: 0px 5%;
+}
+nav *{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: .1em;
 }
 body{
     margin: 0px;
@@ -23,20 +33,28 @@ section{
     padding: 10% 5%;;
 }
 section#hero{
-    background-color: lightgrey;
+    background-image: url('background.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 0px;
+    height: 400px;
+    padding-top: 200px;
 }
 section#projects{
-    background-color: white;
+    background-color: #373737;
 }
 section#bio{
-    background-color: lightgrey;
+    background-color: #7F7B78;
 }
 section#contact{
-    background-color: white;
+    background-color: #373737;
 }
-
 h2, h3, h4, h5 {
     margin: 0px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: .1em;
 }
 
 img {
