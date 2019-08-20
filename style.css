@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: rgb(59, 59, 59);
+    display: flex;
+    justify-content: space-between;
+}
+body{
+    margin: 0px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+nav li{
+    display: inline-block;
+    padding-right: 10px;
+}
+section{
+    padding: 10% 5%;;
+}
+section#hero{
+    background-color: lightgrey;
+}
+section#projects{
+    background-color: white;
+}
+section#bio{
+    background-color: lightgrey;
+}
+section#contact{
+    background-color: white;
+}
+
+h2, h3, h4, h5 {
+    margin: 0px;
+}
+
+img {
+    height: 80%;
+    width: 80%;
+}
