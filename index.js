@@ -44,7 +44,7 @@ function stickToTop(){
 
 function highlightJump(){
     for (let i = 0; i < sections.length; i++){
-        if (window.pageYOffset >= sections[i].offset().top && window.pageYOffset < sections[i].offset().top + sections[i].outerHeight(true)){
+        if (window.pageYOffset >= sections[i].offset().top - $('nav').outerHeight(true) && window.pageYOffset < sections[i].offset().top + sections[i].outerHeight(true) - $('nav').outerHeight(true)){
             $(`.${sections[i].attr('id')}`).addClass('highlight');
         }
         else{
@@ -64,12 +64,22 @@ function generateProjects(){
                     </div>
                     <div class="description-box">
                         <p class="description">${projects[i].description}</p>
+                        <div class="project-links">
+                            <a href=${projects[i].live}>Live</a>
+                            <a href=${projects[i].live}>Repo</a>
+                        </div>
                     </div>
                 </div>
             </li>
         `)
     }
     
+}
+
+function jumpToPosition(object){
+    $("body, html").animate({ 
+        scrollTop: $($(object).attr('href')).offset().top - $('nav').outerHeight(true)
+    }, 200);
 }
 
 function handelListeners(){
@@ -80,15 +90,6 @@ function handelListeners(){
     window.addEventListener('scroll', stickToTop);
     window.addEventListener('scroll', highlightJump);
 }
-
-function jumpToPosition(object){
-    $("body, html").animate({ 
-        scrollTop: $($(object).attr('href')).offset().top + 1
-    }, 200);
-}
-
-
-
 
 function handlePortfolio(){
     generateProjects();
