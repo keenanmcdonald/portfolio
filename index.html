@@ -6,42 +6,37 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Oswald&display|Quattrocento&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
     <nav>
-        <h1>KEENAN McDONALD</h1>
+        <div class="name-container"><h1>KEENAN MCDONALD</h1></div>
         <ul>
-            <li>PROJECTS</li>
-            <li>BIO</li>
-            <li>CONTACT</li>
+            <li><a class='jump projects' href='#projects'>PROJECTS</a></li>
+            <li><a class='jump bio' href='#bio'>BIO</a></li>
+            <li><a class='jump contact' href='#contact'>CONTACT</a></li>
         </ul>
     </nav>
     <main>
         <section id='hero'>
-            <h2>KEENAN McDONALD</h2>
-            <p id='headline'>I'm a web developer and outdoor adventure guide based in Austin, TX</p>
+            <h1 class="my-name">KEENAN McDONALD</h1>
+            <p class="headline">I'm a web developer and outdoor adventure guide based in Austin, TX</p>
         </section>
-        <section id='projects'>
-            <h4>PROJECTS</h4>
-            <ul>
-                <li>
-                    <h5>CLIMBING QUIZ</h5>
-                    <p class='quick-description'>Test knowledge of anchors and knots</p>
-                    <img class='screenshot' src='screenshots/climbing-quiz-screenshot.png' alt='a screenshot of the climbing quiz app'>
-                    <p class='description'>This is a brief quiz to test technical knowledge of anchors and knots used in climbing. It includes some of my favorite tidbits of climbing trivia and is geared toward serious climbers and guides.</p>
-                </li>
+        <section id="projects">
+            <h2>PROJECTS</h2>
+            <ul class="project-list">
             </ul>
         </section>
-        <section id='bio'>
-            <h4>BIO</h4>
-            <p class='bio-text'>
+        <section id="bio">
+            <h2>BIO</h2>
+            <p class="bio-text">
                 I'm a web developer working on completing a Full Stack Web Development 
                 bootcamp at Thinkful. I started coding at a young age but took a break to pursue my other 
                 passions in my early 20's. I'm excited to come back to more technical pursuits as I work 
                 to develop new skills as a coder and web developer. I'm especially interested in developing 
                 products at the intersection of technology and the outdoors.
             </p>
-            <p class='bio-text'>
+            <p class="bio-text">
                 In my spare time, you can find me rock climbing throughout the U.S. and abroad. 
                 I'm an avid mountaineer, mountain biker, caver, and kayaker as well. I have spent 
                 years in the outdoor education feild working to get more kids spending time outside. 
@@ -49,12 +44,13 @@
                 modular synthesizer.
             </p>
         </section>
-        <section id='contact'>
-            <h4>CONTACT</h4>
+        <section id="contact">
+            <h2>CONTACT</h2>
             <ul>
                 <li>email: <a href: 'mailto:keenanjmcdonald@gmail.com'>keenanjmcdonald@gmail.com</a></li>
             </ul>
         </section>
     </main>
+    <script src="index.js"></script>
 </body>
 </html>
