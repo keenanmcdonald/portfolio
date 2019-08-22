@@ -3,7 +3,7 @@ let headline = $('.headline');
 let stickyPosition = myName.offset().top - parseInt(myName.css('marginTop')); //accounting for the upper margin
 let headlineOffset = headline.offset().top - myName.offset().top;
 let projects = [
-    {name: 'Climbing Quiz', description: 'This is a brief quiz to test technical knowledge of anchors and knots used in climbing. It includes some of my favorite tidbits of climbing trivia and is geared toward serious climbers and guides.', technologies: 'This app was made using HTML, CSS, and Javascript.', screenshot: {src: 'screenshots/climbing-quiz-screenshot.png', alt: 'a screenshot of the climbing quiz app'}, live: '', repo: '', color: '#6B839E'}
+    {name: 'Climbing Quiz', description: 'This is a brief quiz to test technical knowledge of anchors and knots used in climbing. It includes some of my favorite tidbits of climbing trivia and is geared toward serious climbers and guides.', technologies: 'This app was made using HTML, CSS, and Javascript.', screenshot: {src: 'screenshots/climbing-quiz-screenshot.png', alt: 'a screenshot of the climbing quiz app'}, live: 'https://keenanmcdonald.github.io/climbing-quiz-app', repo: 'https://github.com/keenanmcdonald/climbing-quiz-app', color: '#6B839E'}
 ];
 let sections = [$('#projects'), $('#bio'), $('#contact')];
 
