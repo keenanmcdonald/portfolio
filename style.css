@@ -84,15 +84,10 @@ section#bio{
 section#contact{
     background-color: rgb(30, 30, 30, .85);
 }
-.border-container{
-    /*padding-left: 5%;*/
-    height: 1px;
-    background-color: rgb(30, 30, 30);
-}
 .border{
-    height: 100%;
-    width: 70%;
-    background-image: linear-gradient(to right, white , transparent);
+    height: 1px;
+    width: 100%;
+    background-image: linear-gradient(to right, white , rgb(30, 30, 30));
 }
 h2, h3{
     margin: 0px;

@@ -45,7 +45,7 @@ function generateProjects(){
                         <p class="description">${projects[i].description}</p>
                         <p class="description">${projects[i].technologies}</p>
                         <p class="project-links">
-                            <a href=${projects[i].live}>live</a><a href=${projects[i].live}>repo</a>
+                            <a href=${projects[i].live}>live</a><a href=${projects[i].repo}>repo</a>
                         </p>
                     </div>
                 </div>
