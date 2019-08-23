@@ -3,7 +3,7 @@ let headline = $('.headline');
 let stickyPosition = myName.offset().top - parseInt(myName.css('marginTop')); //accounting for the upper margin
 let headlineOffset = headline.offset().top - myName.offset().top;
 let projects = [
-    {name: 'Climbing Quiz', description: 'This is a brief quiz to test technical knowledge of anchors and knots used in climbing. It includes some of my favorite tidbits of climbing trivia and is geared toward serious climbers and guides.', technologies: 'This app was made using HTML, CSS, and Javascript.', screenshot: {src: 'screenshots/climbing-quiz-screenshot.png', alt: 'a screenshot of the climbing quiz app'}, live: 'https://keenanmcdonald.github.io/climbing-quiz-app', repo: 'https://github.com/keenanmcdonald/climbing-quiz-app', color: '#6B839E'}
+    {name: 'Climbing Quiz', description: 'This is a brief quiz to test technical knowledge of anchors and knots used in climbing. It includes some of my favorite tidbits of climbing trivia and is geared toward serious climbers and guides.', technologies: 'This app was made using HTML, CSS, and Javascript.', screenshot: {desktop: 'images/screenshots/climbing-quiz-screenshot.png', mobile: 'images/screenshots/climbing-quiz-screenshot-mobile.png', alt: 'a screenshot of the climbing quiz app'}, live: 'https://keenanmcdonald.github.io/climbing-quiz-app', repo: 'https://github.com/keenanmcdonald/climbing-quiz-app', color: '#6B839E'}
 ];
 let sections = [$('#projects'), $('#bio'), $('#contact')];
 
@@ -39,13 +39,14 @@ function generateProjects(){
                 <h3>${projects[i].name}</h3>
                 <div class="project-flex-container">
                     <div class = "screenshot-box">
-                        <img class="screenshot" src='${projects[i].screenshot.src}' alt='${projects[i].screenshot.alt}'>
+                        <img class="screenshot desktop" src='${projects[i].screenshot.desktop}' alt='${projects[i].screenshot.alt}'>
+                        <img class="screenshot mobile" src='${projects[i].screenshot.mobile}' alt='${projects[i].screenshot.alt}'>
                     </div>
                     <div class="description-box">
                         <p class="description">${projects[i].description}</p>
                         <p class="description">${projects[i].technologies}</p>
                         <p class="project-links">
-                            <a href=${projects[i].live}>live</a><a href=${projects[i].repo}>repo</a>
+                            <a href=${projects[i].live} target="_blank">live</a><a href=${projects[i].repo} target="_blank">repo</a>
                         </p>
                     </div>
                 </div>
