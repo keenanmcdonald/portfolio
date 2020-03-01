@@ -134,6 +134,7 @@ section#contact{
 }
 .project{
     display: block;
+    margin-bottom: 25px;
 }
 .project-flex-container{
     margin-top: 10px;
