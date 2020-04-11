@@ -150,7 +150,7 @@ section#contact{
 .description-box{
     flex: 1;
     padding-left: 0px;
-    padding-top: 6px;
+    padding-top: 8px;
 }
 .screenshot {
     border-radius: 4px;
@@ -172,7 +172,7 @@ section#contact{
 }
 
 /*media queries*/
-@media only screen and (min-width: 480px){
+@media only screen and (min-width: 620px){
     .mobile{
         display:none;
     }
@@ -191,6 +191,7 @@ section#contact{
     .description-box{
         padding-left: 2%;
         padding-right: 2%;
+        padding-top: 0px;
     }
     a:hover{
         color: rgb(204, 237, 243);
